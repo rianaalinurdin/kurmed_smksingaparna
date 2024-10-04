@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="utf-8" />
+    <title>P5 Wonderfull Indonesia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="P5 Wonderfull Indonesia " name="keywords" />
+    <meta content="P5 Wonderfull Indonesia " name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+    <style>
+      img.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 90%;
+        width: 100px;
+        left: 90%;
+
+        z-index: 4;
+      }
+    </style>
+
+    <!-- Style Slider -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        /* font-family: "Open Sans", sans-serif; */
+      }
+      h2 {
+        /* color: #000; */
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 30px 0 70px;
+      }
+      h2::after {
+        content: "";
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 4px;
+        border-radius: 1px;
+        background: #1c47e3;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+      }
+      .carousel .carousel-item {
+        color: #999;
+        overflow: hidden;
+        min-height: 120px;
+        font-size: 18px;
+      }
+      .carousel .media img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 50%;
+      }
+      .carousel .testimonial {
+        padding: 0 10px 0 35px;
+        position: relative;
+      }
+      .carousel .testimonial::before {
+        content: "\201C";
+        font-family: Arial, sans-serif;
+        color: #0b0fff;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 54px;
+        position: absolute;
+        left: 175px;
+        top: 0;
+      }
+      .carousel .overview b {
+        text-transform: uppercase;
+        color: #1c47e3;
+      }
+      .carousel .carousel-indicators {
+        bottom: -40px;
+      }
+      .carousel-indicators li,
+      .carousel-indicators li.active {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 1px 3px;
+        box-sizing: border-box;
+      }
+      .carousel-indicators li {
+        background: #e2e2e2;
+        border: 4px solid #fff;
+      }
+      .carousel-indicators li.active {
+        color: #fff;
+        background: #1c47e3;
+        border: 5px double;
+      }
+    </style>
+  </head>
+  <body>
+    <bgsound src="/bs-wonderfull-indonesia.m4a" />
+    <img
+      href="https://youtu.be/b8RDtWt_RS8?t=17"
+      class="sticky"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlm-dNtyK3MVEO3JSuHfWAZYENw02ARQQmHy49-JJt2vWXQ3p4_0LdGYCsn21j7bh8vdtgMIXUQWHHsMwsdNzTQ3qMy6X8YRfE7Jr5asET6dEJQIHnT5TaOH8O0QB2bkjt7ARDdb8P95ypgb8_2xpaLWjuVBSOcp36OdVbH2ej7dyGP_zPlCgOHhCwbRo/s320/Chat%20Tombol-01-01-01.png"
+      alt="Avatar"
+    />
+    <!-- navigasi -->
+    <div class="container">
+      <nav
+        class="navbar fixed-top navbar-expand-lg bg-light navbar-light bg-body-tertiary"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><h5 class="pt-1">
+              <span class="text-primary fs-4 font-weight-bold">Info</span>
+              Kurikulum
+            </h5></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
+              <a class="nav-link" href="#kegiatan">Kegiatan</a>
+              <a class="nav-link" href="#Konsentrasi">Konsentrasi</a>
+              <a class="nav-link" href="#assesment">Assesment</a>
+              <a
+                class="nav-link disabled"
+                href="https://rianaalinurdin.github.io/rianaalinurdin/repository.html"
+                >Repository</a
+              >
+              <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+            </div>
+            <div>
+              <a
+                class="btn btn-primary py-2 px-4 ml-auto"
+                href="eksul-sinematografy.html"
+                >Admin</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- navigasi akhir -->
+
+    <!-- pengantar  awal-->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <iframe
+            class="m-2"
+            width="474"
+            height="280"
+            src="https://www.youtube.com/embed/b8RDtWt_RS8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            P5 Wonderfull Indonesia 2024
+          </h1>
+          <p class="lead">
+            Temukan keindahan yang tiada duanya di negeri zamrud khatulistiwa,
+            Indonesia. Dengan kekayaan alam, budaya, dan keramahan penduduknya,
+            Indonesia menawarkan pengalaman wisata yang luar biasa.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#koordinator" class="btn btn-danger btn-lg">Koordinator</a>
+            <a href="#mulai" class="btn btn-primary btn-lg px-3"
+              >Mulai Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="tentang" class="container-fluid py-5 mt-5">
+      <div class="container py-2">
+        <div class="text-center mb-6">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            P5 Wonderfull Indonesia 2024
+          </h5>
+          <h1 class="mb-3">SMK Singaparna</h1>
+        </div>
+
+        <div class="px-2 text-center">
+          <div class="col-lg-12 mx-auto">
+            <p class="mb-4 lead">
+              Dalam kegiatan ini, siswa-siswi diharapkan dapat memahami
+              nilai-nilai luhur yang terkandung dalam budaya lokal dan
+              menerapkannya dalam kehidupan sehari-hari, sekaligus mengasah
+              kreativitas mereka dalam mempromosikan budaya lokal ke dunia
+              global.
+            </p>
+            <p class="lead">
+              Dengan semangat "Dari Lokal untuk Global", kami yakin generasi
+              muda akan mampu membawa kebudayaan Indonesia ke pentas dunia,
+              tanpa melupakan akar tradisi yang telah menjadi bagian dari jati
+              diri bangsa.
+            </p>
+            <a href="#mulai" class="btn btn-primary btn-lg">Selengkapnya</a>
+
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- tim koordinator -->
+
+    <div class="container" id="koordinator">
+      <div class="container">
+        <!-- Testimonial Start -->
+        <div class="container mb-5">
+          <div class="container">
+            <div class="text-center mb-4">
+              <h5
+                class="text-primary text-uppercase mb-3"
+                style="letter-spacing: 5px"
+              >
+                TIM
+              </h5>
+              <h1>Koordinator</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="owl-carousel testimonial-carousel">
+                  <div
+                    id="myCarousel"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <!-- Carousel indicators -->
+                    <!-- <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol> -->
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgryAyl6JBkKzMJEksP1EzBtBm1bAKEDbBydyXrJ38OWqPkRgakF1eRphmk2dztYP2TwLH979f4CSeEIVsgDtVV-EvfRmeDRIqAt3VBY6WKRwAobDac28jfYEZHdzIM8q6GLMz8EIaht0hwTGjliOs-MSWTJgWPAA5Ze7Qlafrsj2nCUVyFU7uNOUWL-2Y/s320/WhatsApp%20Image%202024-10-04%20at%2015.16.44_49a8300e.jpg"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="">
+                                  <p>
+                                    "Melestarikan tradisi, memperkuat identitas
+                                    bangsa."
+                                  </p>
+                                  <p class="overview">
+                                    <b>Sylvia Damayanti, SH.</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnneEH1xYOSvNM5SVpDBmIFTEG9DOmRuMpmBJ9u6qLuXTBzTmOQZ5tdBfFhgSr-2LChwLUSb4KHBsOkfVAX1Pnx2zzeDWtpRMfi213KFyPT1IVLIl-j8eKAZPl7zKSgMGH4RA9kI4A7EBpEtemaNnMZAEqoCES8_Wh6rMVYFLGPlUzsjbm1FKB4YWVvxs/s320/WhatsApp%20Image%202024-10-04%20at%2015.16.42_cbf75b75.jpg"
+                                alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                              />
+
+                              <div class="media-body">
+                                <div class="">
+                                  <p>
+                                    "Eksplorasi keunikan Indonesia, inspirasi
+                                    untuk dunia."
+                                  </p>
+                                  <p class="overview">
+                                    <b>Dian Hidayat, S.Pd.I</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSnhyphenhyphen0gfzL4dUwKHhrK3m_OcOKqzp2lTafQbcK9DYvWqRRXhGu8jJNWIi4PHjxZpZm59pSx2-mjR_FtT9HKxkiaJ8lbMmEmgs1Qkibt1fezUUa8QrCZSikQi0wWdGor6dbOt8QkYi85VoPvW7w-9Em-InALX3B5tDXMzFZmBrn_jZ1ie8CJorIm9DC9B4/s320/WhatsApp%20Image%202024-10-04%20at%2015.16.43_f44536ce.jpg"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="">
+                                  <p>
+                                    "Wisata yang bijak, budaya yang lestari."
+                                  </p>
+                                  <p class="overview">
+                                    <b>Delianti, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYnDO3A8orp8T2VDNXHXPkvGipus_kHE0Fe4IKGJnTqL1JGyGjfyfSB9-SolOsmoiXYH3YVO9QR9U65Cu1Q-Wi4idir08mMhN9PUhY16_uBK9HEn9nYpNC8owtJ_cMZVn0QfLTV7Tpu0lqfOs1fY9IPJSpjeBhw974KpUWxgsd8-7tQH0BHjkaZ-dpuxU/s320/irsan%20ginanjar.png"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="">
+                                  <p>
+                                    "Keindahan Indonesia, dari lokal untuk
+                                    dunia!"
+                                  </p>
+                                  <p class="overview">
+                                    <b>Irsan Ginanjar Fadilah, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidHGlZUDgHlBxoM3icR99yeqcZCc4d5N9m09jdsDwp3XT2svihsT1_tdLidgB80IkO2UT1duWosqoSx84J0fBr4GEe5pXht9ziKHVpd7vUsF6cAFKEEPdHut-4F90b01dCg9Vzq-UbpE4jMdTSLnmMGglFsd03_ElDhqy-QqmtiSv2l1AX8bDFc3kdx6Q/s320/WhatsApp%20Image%202024-10-04%20at%2015.49.55_e80868d3.jpg"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="">
+                                  <p>
+                                    "Dengan cinta budaya, kita wujudkan
+                                    pariwisata berkelanjutan."
+                                  </p>
+                                  <p class="overview">
+                                    <b>Yuli Sri Yulinar, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmkcVM5GgRqRneKdHogpn1YyzRT5dTAf1tDH2_jT73axsMZyaAyMpdBb9nPGEaK3ot2MIphxy7b5-c_RVkc40VqG41cc0Wdeliw4nknmUJPH0ruIfvf9MKU5dw4G40ZL9XS91HaM75CFMXzs-uaRmVO0_RunUGsq9XOx2sI0reQN8ARHMtaGlM4RZGL2g/s320/WhatsApp%20Image%202024-10-04%20at%2015.16.43_b1e25024.jpg"
+                                class=""
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="">
+                                  <p>
+                                    "Menggali kearifan lokal, memperkaya wisata
+                                    nasional."
+                                  </p>
+                                  <p class="overview">
+                                    <b>Enur Nurjanah, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tahan ujian mulai -->
+    <div class="container px-2" id="hanging-icons ">
+      <h2 id="mulai" class="pb-2 tengah text-center">Tahapan Kegiatan</h2>
+      <p class="text-center lead">
+        Program ini terdiri dari beberapa tahapan yang terstruktur dengan baik
+        untuk memastikan pencapaian tujuan tersebut secara efektif. Berikut
+        adalah narasi tahapan P5 Wonderfull Indonesia:
+      </p>
+      <div class="text-center mb-5">
+        <a
+          href="https://drive.google.com/uc?export=download&id=16WAs0jkmyOyov9R6L50ah2fxsVI3TMcw"
+          class="btn btn-primary text-center btn-lg m-2"
+          >Download Modul</a
+        >
+
+        <a
+          class="btn btn-success btn-lg m-2"
+          href="whatsapp://send?text=Download Modul Wonderfull Indonesia Link Berikut:https://drive.google.com/drive/folders/1kvZgpyiZh3xV-cac-7xp9XZykIpCOg8f "
+          data-action="share/whatsapp/share"
+          target="_blank"
+          style="pointer-events: none"
+        >
+          Bagikan Modul
+        </a>
+      </div>
+      <div class="container mb-4">
+        <!-- baris ke-1 tahapan -->
+
+        <!-- baris ke-1 akhir -->
+      </div>
+      <div class="container mb-4">
+        <!-- baris ke-1 tahapan -->
+        <h5
+          class="text-primary text-uppercase mb-3 text-center mb-4"
+          style="letter-spacing: 5px"
+        >
+          Lembar Kerja Peserta Didik
+        </h5>
+        <div class="row">
+          <div class="col-md-12 col-lg-3 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlofT7BfB5N7CWGq_PWPoBzIWF1JxA0FPJJc8zA2wTPUimhISSsEHc_9SblxikoY6tyuf5WT4I-rqTA2qVL0OxtEUYoHI1Z2R1xfm3n-FrfVYvI727_WCl3d9xxyBiXKh4wS0sC0soUGLz98hflu9SUN-4SaZJumvVMjKFGcJfxEy_NixCZRCahwAXrMk/s320/2.png"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Eksplorasi Kebhinekaan
+
+                    <span class="badge rounded-pill bg-primary">LKPD 1</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://forms.gle/JL5ktiP7yMF145iU7"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1PGY_t9OV_bQ_gy7JdIyialrCLnOvNn5HEwFBVMDNFb8/edit?usp=sharing"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-3 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi53ne-w6cqn4heTYopjzlBQ_KB_rZSqazoIrM45sFBSCESHMwVotmPBYqeRBqnAFVVUQq7j0cW-zdcUua-44FamZg8iPZuhQj2T-zt2i-JbsIcK-twu5U9z7662gkojPJxekocVcerZ4bjfZ__X9yEIzaOurdx8sILdzqpbQVNcMtvDceaMANf1qd879k/s320/3.png"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Identifikasi Suku Bangsa
+
+                    <span class="badge rounded-pill bg-primary">LKPD 2 </span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://forms.gle/59N1StFs7SESB57k8"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1PGY_t9OV_bQ_gy7JdIyialrCLnOvNn5HEwFBVMDNFb8/edit?usp=sharing"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-3 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbacIMkGjewRtwXOqoh0wi5lEAekUsX6ad18bs_59v2iEm2k1zVbnyjCbHEqrZKe3EZmBryluQ-ldpiJo9XniGJmG_Qd45nWraxo_hcX1NOayOLWT3GArYbNgjMi-KRGN1L0pBl4P66xzPCBDzkqF_j8Bb6lgj7DT8_-N44aIy_rtySEGUgtRoHYtvsvA/s320/1.png"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Identifikasi Tantangan
+
+                    <span class="badge rounded-pill bg-primary">LKPD 3</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://forms.gle/7J4zuti3pffPxMsU7"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1PGY_t9OV_bQ_gy7JdIyialrCLnOvNn5HEwFBVMDNFb8/edit?usp=sharing"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-3 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Seminar Kebhinekaan
+
+                    <span class="badge rounded-pill bg-primary">LKPD 4</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://forms.gle/BoGstXBLoB4ZbFYM8"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1PGY_t9OV_bQ_gy7JdIyialrCLnOvNn5HEwFBVMDNFb8/edit?usp=sharing"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-TdhOo-b82TfDKzO_MHrq-8fBWJ1GLKBTWYqpa2Sv29XeelhoUXK6-yryPaFxe04-tkhsXMQKB42gL2KEOM6B3KbX2_t5jtE-Ud0Zf7hnZd9zxuozYbDpzBtuUeY1C5Jq_Qp0kff4ov1lpSkUnhyphenhyphenYUi1OKy5w8Ns6b7mLVZDneL4DHOrFu5tAxajRm0U/s320/4.png"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Solusi Tantangan Kebhinekaan
+
+                    <span class="badge rounded-pill bg-primary">LKPD 5</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://forms.gle/cJaEaRAc8zbYhPDJA"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1PGY_t9OV_bQ_gy7JdIyialrCLnOvNn5HEwFBVMDNFb8/edit?usp=sharing"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQV7LZ1PIPuQYfmUtfZPQUP_VsBT7DhLu_1eenFz8PMLNJiNN0LEqcVzJx4_HPlUvR1Sm6fIr7iO1UvgbNtIPRksDZDuXX8xgxP2MtBdx3PwUvU7vwk7OGilXvV3FcowAaVVOHFXhvjx5SfMnxYum0A5irfGJZPqSjy5cwFMy4Ow8q1k6VTajdUZHNFu8/s320/7.png"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Pemahaman Mind-Mapping
+
+                    <span class="badge rounded-pill bg-primary">LKPD 6</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://forms.gle/1x5VqmUQMzNQpKds5"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1PGY_t9OV_bQ_gy7JdIyialrCLnOvNn5HEwFBVMDNFb8/edit?usp=sharing"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU0f0Fgc-_QyXZe5JJJoB-sP8DZg8lRyoWu8V7L0E2cEMcNyMDlCI75XVtDBl_hldBzfY6OzsYFGUf4y3unEmPhKnNrDjNAjC-7IjhekqzaSvh_GlOKkSIHfyJELKJ1bFhOXH-Bh6VHZmDhg8H2HR3eYAij7jYZaFYjU4AvbNOiaZNNlgqxtlN9uPmVyc/s320/6.png"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Memaknai Nilai-Nilai Budaya
+
+                    <span class="badge rounded-pill bg-primary">LKPD 7</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://forms.gle/9grCKuUzzPEUMPUNA"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1PGY_t9OV_bQ_gy7JdIyialrCLnOvNn5HEwFBVMDNFb8/edit?usp=sharing"
+                target="_blank"
+                style="pointer-events: none"
+                style="pointer-events: none"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- baris ke-1 akhir -->
+      </div>
+    </div>
+
+    <!-- prakata Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            Assesmen
+          </h5>
+          <h1>Tahapan Kegiatan P5</h1>
+        </div>
+
+        <div class="container my-5">
+          <div
+            class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border"
+          >
+            <div class="col-lg-7 p-3 pt-lg-3">
+              <h1 class="display-5 fw-bold lh-1 text-body-emphasis">
+                Asesmen Wonderfull Indonesia 2024
+              </h1>
+              <p class="lead">
+                Asesmen Wonderful Indonesia 2024 hadir sebagai wujud komitmen
+                dalam meningkatkan kualitas pariwisata nasional. Melalui program
+                ini, kami menilai kesiapan destinasi-destinasi wisata unggulan
+                dari segi fasilitas, pelayanan, dan daya tarik loka
+              </p>
+
+              <div
+                class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+              >
+                <div class="">
+                  <a
+                    class="m-2 btn btn-primary py-2 px-4 ml-auto"
+                    href="https://docs.google.com/spreadsheets/d/1w4wChkIKCm4qHhDkCH3Y1pkfUepNW4-xVSxoDV1nVYA/edit?usp=sharing"
+                    target="_blank"
+                    style="pointer-events: none"
+                    >Minggu Ke-1</a
+                  >
+                  <a
+                    class="m-2 btn btn-danger py-2 px-4 ml-auto"
+                    href="https://docs.google.com/spreadsheets/d/1-C3oZoKwz5Qn8ffmGGykb4YZg1qohz149q2lOBxmqMI/edit?usp=sharing"
+                    target="_blank"
+                    style="pointer-events: none"
+                  >
+                    Minggu Ke-2</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+              <img
+                class="rounded-lg-3"
+                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXNzZXNzbWVudHxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+                width="720"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Penguji End -->
+
+    <!-- Dokumentasi Start -->
+    <!-- <div class="container-fluid">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            Dokumentasi
+          </h5>
+          <h1>Kegiatan P5 Wonderfull Indonesia</h1>
+        </div>
+        <div class="album pb-5 bg-body-tertiary">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgijk8OBdCmTFpeFjajMLRgsM5AGvMLumidrWWE7xY69ovmg-l7viRFonn370W6MyFC4Dv0DBUs1mY6u42bL1jEdi-QkgTsaeS0LH83DhLNZ8HAmUTmh4USCh9YQqgdy8FAdExyXo3nIWV89XGnK4VD3RUxvk7cIl_DCUGKJrP40mgwnoBXLzXYTmpzTR4/s320/WhatsApp%20Image%202024-08-27%20at%2014.01.44_12d93903.jpg"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Wonderfull Indonesia
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKN5fkrHgyka_GXPPZ0mJEzYbcjg2vqttHLzDA6uXKP2EwQiXL6ss_Ja-FU1nDWshVbjBirRzE7mDnSdkN9sdrwalP1QvQvGmnXRYE6V4tE794r7O15qoHjBke6DQ04QqX0KDzaHjDhC3XyENNpgUIYYIfTLbw_NFz7wWnZCrkDMGL78EpHdic47DO9fU/s320/WhatsApp%20Image%202024-08-27%20at%2013.49.31_a929a987.jpg"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Wonderfull Indonesia
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGR3t4GjbR6FTM1P1qUyvNSzGPbQP4pZfYw0l6apXLp6on20gSblo4RuQqgIj0YdEofAMSA_2S2Ja7f9BgMduYkI4-HkEyUCZb1tVccmYXG9jaK159yjsH3UMFhsPg_dG02Mwgg-jy_OStY0a9Qcl5EptjLohDlPlK6KCW-QbIrX-ycdT7bm3iBSF9t2o/s320/WhatsApp%20Image%202024-08-27%20at%2013.36.51_ee656beb.jpg"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Wonderfull Indonesia
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjnCdkDkI0btVl8FApLEROvjqR8QkdVRpqufW-5EK8scXihU5FEYS1EoqqF-3AZhPpLwLTwjf3rC-zJ5xh0Gm58oqgy3LoKE6dXTpgwFrmUEEOHHrogtAoAyVfv3GIJE9TSdgZlBque-vGZu1PW7hwUTtqU_1PlbeoCMCYJH0aVannguJWt0zNMlZ_zzQ/s320/WhatsApp%20Image%202024-08-27%20at%2013.36.48_526559b3.jpg"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Wonderfull Indonesia
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6Rz5AJT9nsBX_49O3r_j4b_rgQyJaXPajfgnXFnfTDEM0D00jR7eIH7Bft4_bnBobgTPwvXAaW5B0f12EwONhHZVUYclVBhAC9vOUlPzKW4zt-vPzCKCkCchBsXiuST2nlMA7PcM-0QGP8-LjDW5PMILL1Jqq9rcUIHYb3_rO_5tODYANIQ73QenJxSs/s320/WhatsApp%20Image%202024-08-27%20at%2013.55.25_a9be333f.jpg"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Wonderfull Indonesia
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvkZxicTcGBsN5Jgc49n9fVZ9Kj_2el7mhyphenhyphen-N7-RMKyEWp4BJ69CDcJ3A0cn05n0EivsJBishEoUqMGfAuIzElH1-xJOSjvkaUxI3yPsbycPnV7qubE7w4yNV2ZNvNDTA6Nch37IeFHAVNOfImORPG3Oti3ar1_oySb2LOMmCx4nRq3nrHFRkDFNSwmkU/s320/WhatsApp%20Image%202024-08-27%20at%2013.33.05_1926808e.jpg"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Wonderfull Indonesia
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="container-fluid">
+      <div class="container">
+        <div class="container-fluid py-5">
+          <div class="container py-5">
+            <div class="text-center mb-5">
+              <h5
+                class="text-primary text-uppercase mb-3"
+                style="letter-spacing: 5px"
+              >
+                Dokumentasi
+              </h5>
+              <h1>Vidio Kegiatan P5</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="owl-carousel testimonial-carousel">
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/vv-BQR9pUOM?si=Id23wtF470bCsevL"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Pembukaan Kegiatan P5</h3>
+                    <p>
+                      Azzahra Putri Aprilia <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/D669TDa4mQ0?si=PgDWNVOY-0eWgwsj"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Duta Budaya</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/aRQCbbVo4DI?si=Jm_F2fIFCtIHd7JU"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Seminar P5</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/FW5Fb8gTemU?si=LM0lsKYMJRGh-suG"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Bermain Wonderfull Indonesia</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/wk0-aj618mw?si=ttuG6ELXbfa0du5E"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Olah Raga Dan Wonderfull Indonesia</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/yH8KhrmAXDQ?si=EF5lLYEovW3i5W06"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Duta Budaya</h3>
+                    <p>
+                      Rizky Janwart <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Duta Budaya SMK Singaparna
+                      </span>
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/JWh8Lukngn4?si=jNc7yEctGAtQP2xT"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Membuat Infografis</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Dokumentasi End -->
+
+    <!-- prakata Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            Prakata
+          </h5>
+          <h1>Kepala SMK Singaparna</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <p class="mb-4 lead">
+                  Program P5 Wonderfull Indonesia ini merupakan salah satu upaya
+                  kita dalam menanamkan nilai-nilai Wonderfull Indonesia,
+                  toleransi, dan persatuan di kalangan siswa.
+                </p>
+                <img
+                  class="img-fluid mx-auto mb-3"
+                  style="
+                    object-fit: cover;
+                    object-position: left top;
+                    scale: 120%;
+                  "
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH7Qa2jF2vqEZ4DeZkhdN6ybFw3Kjqt6k9ofnkEuq2YvHmyYJtvq8OUh_yIKbZNN9UEjZEiOHFSsLLNAUR5-CjErmf2K5Efzeg7lxjEvFuOgKo10OGozwcJrhr4kawYq76FOY1A8I2AiP9kIj1uWDq9JMD_UnMHImLt1xZlniDjlal8zWe7rgLgKPmY2w/s1098/Kepala%20Sekolah%20SMK%20Singaparna.png"
+                  alt=""
+                />
+                <h5 class="m-0 lead">Sri Mulyani, S.Pd</h5>
+                <span class="badge rounded-pill bg-primary"
+                  >Kepala SMK Singaparna</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- prakata End -->
+
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+
+    <div
+      class="container-fluid bg-primary text-white border-top py-4 px-sm-3 px-md-5"
+      style="border-color: rgba(256, 256, 256, 0.1) !important"
+    >
+      <footer class="py-3 my-4 text-light">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="px-2 text-light">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ayo_mulai" class="px-2 text-light">Kegiatan</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tentang" class="px-2 text-light">Tentang</a>
+          </li>
+        </ul>
+        <p class="text-center">
+          DKV SMK Singaparna @ <span class="text-light fw-bold">2024</span>
+        </p>
+      </footer>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
