@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="utf-8" />
+    <title>P5 Gaya Hidup Berkelanjutan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="P5 Gaya Hidup Berkelanjutan " name="keywords" />
+    <meta content="P5 Gaya Hidup Berkelanjutan " name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+    <style>
+      img.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 90%;
+        width: 100px;
+        left: 90%;
+
+        z-index: 4;
+      }
+    </style>
+
+    <!-- Style Slider -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        /* font-family: "Open Sans", sans-serif; */
+      }
+      h2 {
+        /* color: #000; */
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 30px 0 70px;
+      }
+      h2::after {
+        content: "";
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 4px;
+        border-radius: 1px;
+        background: #1c47e3;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+      }
+      .carousel .carousel-item {
+        color: #999;
+        overflow: hidden;
+        min-height: 120px;
+        font-size: 18px;
+      }
+      .carousel .media img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 50%;
+      }
+      .carousel .testimonial {
+        padding: 0 10px 0 35px;
+        position: relative;
+      }
+      .carousel .testimonial::before {
+        content: "\201C";
+        font-family: Arial, sans-serif;
+        color: #0b0fff;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 54px;
+        position: absolute;
+        left: 175px;
+        top: 0;
+      }
+      .carousel .overview b {
+        text-transform: uppercase;
+        color: #1c47e3;
+      }
+      .carousel .carousel-indicators {
+        bottom: -40px;
+      }
+      .carousel-indicators li,
+      .carousel-indicators li.active {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 1px 3px;
+        box-sizing: border-box;
+      }
+      .carousel-indicators li {
+        background: #e2e2e2;
+        border: 4px solid #fff;
+      }
+      .carousel-indicators li.active {
+        color: #fff;
+        background: #1c47e3;
+        border: 5px double;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      href="https://www.youtube.com/watch?v=szpHG3gdDxU"
+      class="sticky"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlm-dNtyK3MVEO3JSuHfWAZYENw02ARQQmHy49-JJt2vWXQ3p4_0LdGYCsn21j7bh8vdtgMIXUQWHHsMwsdNzTQ3qMy6X8YRfE7Jr5asET6dEJQIHnT5TaOH8O0QB2bkjt7ARDdb8P95ypgb8_2xpaLWjuVBSOcp36OdVbH2ej7dyGP_zPlCgOHhCwbRo/s320/Chat%20Tombol-01-01-01.png"
+      alt="Avatar"
+    />
+    <!-- navigasi -->
+    <div class="container">
+      <nav
+        class="navbar fixed-top navbar-expand-lg bg-light navbar-light bg-body-tertiary"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><h5 class="pt-1">
+              <span class="text-primary fs-4 font-weight-bold">Info</span>
+              Kurikulum
+            </h5></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
+              <a class="nav-link" href="#kegiatan">Kegiatan</a>
+              <a class="nav-link" href="#Konsentrasi">Konsentrasi</a>
+              <a class="nav-link" href="#assesment">Assesment</a>
+              <a
+                class="nav-link disabled"
+                href="https://rianaalinurdin.github.io/rianaalinurdin/repository.html"
+                >Repository</a
+              >
+              <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+            </div>
+            <div>
+              <a
+                class="btn btn-primary py-2 px-4 ml-auto"
+                href="eksul-sinematografy.html"
+                >Admin</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- navigasi akhir -->
+
+    <!-- pengantar  awal-->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <iframe
+            class="m-2"
+            width="474"
+            height="280"
+            src="https://www.youtube.com/embed/CGd3lgxReFE?si=GebQJIXOn4Fa4jOo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            P5 Gaya Hidup Berkelanjutan 2024
+          </h1>
+          <p class="lead">
+            SMK Singaparna berkomitmen untuk menciptakan lingkungan belajar yang
+            sehat dan berkelanjutan. Melalui proyek Penguatan Profil Pelajar
+            Pancasila (P5) dengan tema "Sampahku, Tanggung Jawabku", kami
+            mengajak seluruh siswa, guru, dan karyawan untuk berperan aktif
+            dalam pengelolaan sampah.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#mulai" class="btn btn-primary btn-lg">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="tentang" class="container-fluid py-5 mt-5">
+      <div class="container py-2">
+        <div class="text-center mb-6">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            P5 Gaya Hidup Berkelanjutan 2024
+          </h5>
+          <h1 class="mb-3">SMK Singaparna</h1>
+        </div>
+
+        <div class="px-2 text-center">
+          <div class="col-lg-12 mx-auto">
+            <p class="mb-4 lead">
+              Dalam kegiatan ini, siswa-siswi diharapkan dapat memahami
+              nilai-nilai luhur yang terkandung dalam budaya lokal dan
+              menerapkannya dalam kehidupan sehari-hari, sekaligus mengasah
+              kreativitas mereka dalam mempromosikan budaya lokal ke dunia
+              global.
+            </p>
+            <p class="lead">
+              Dengan semangat "Dari Lokal untuk Global", kami yakin generasi
+              muda akan mampu membawa kebudayaan Indonesia ke pentas dunia,
+              tanpa melupakan akar tradisi yang telah menjadi bagian dari jati
+              diri bangsa.
+            </p>
+            <a href="#mulai" class="btn btn-primary btn-lg">Selengkapnya</a>
+
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- tahan ujian mulai -->
+    <div class="container px-2" id="hanging-icons ">
+      <h2 id="mulai" class="pb-2 tengah text-center">Tahapan Kegiatan</h2>
+      <p class="text-center lead">
+        Program ini terdiri dari beberapa tahapan yang terstruktur dengan baik
+        untuk memastikan pencapaian tujuan tersebut secara efektif. Berikut
+        adalah narasi tahapan P5 Gaya Hidup Berkelanjutan:
+      </p>
+      <div class="text-center mb-5">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1okt75Lv5hqZm2zYTP1tSDe-jRRx273hL"
+          class="btn btn-primary text-center btn-lg m-2"
+          >Download Modul</a
+        >
+
+        <a
+          class="btn btn-success btn-lg m-2"
+          href="whatsapp://send?text=Download Modul Gaya Hidup Berkelanjutan Link Berikut:https://s.id/DownloadModul_GHB"
+          data-action="share/whatsapp/share"
+          target="_blank"
+        >
+          Bagikan Modul
+        </a>
+      </div>
+      <div class="container mb-4">
+        <!-- baris ke-1 tahapan -->
+        <h5
+          class="text-primary text-uppercase mb-3 text-center mb-4"
+          style="letter-spacing: 5px"
+        >
+          Lembar Kerja Peserta Didik Minggu Ke-1
+        </h5>
+        <div class="row">
+          <div class="col-md-12 col-lg-4 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEiAN5BLwDFeCInZgLn7QGqBWHGAaRmXA64uDLC5ovID3W5d0JVDuO7vL-IUu_rYTV7ZHINI-EaaPa12plAUluprcwCqXJ-leJ3Tyyy5BA7LzLIngXXODVc10d3QqWT1Xi6ROzNLSzWnIVJ9QgZipvJS9kMyA3dNwvmdh8Jjh8W3Og_r7tWoVuE11uhqOpY"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Menemukan Masalah
+                    <span class="badge rounded-pill bg-primary">LKPD 1</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSftJqpu8hpbuF_kRKV-fBs8gg9hcH-9py1uCN99DvnqvJ80CQ/viewform?usp=pp_url&entry.1449578952=1.Menemukan+Masalah"
+                target="_blank"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1aqt0t6f6B4GJsTIxU3aWFmGdxsF8_ZRWwyb2RCW51tI/edit?resourcekey=&gid=857282865#gid=857282865"
+                target="_blank"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://images.unsplash.com/photo-1610725079793-6c7dfd7f2150?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHJhc2h8ZW58MHx8MHx8fDA%3D"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Mengenali Sampah
+                    <span class="badge rounded-pill bg-primary">LKPD 2 </span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSftJqpu8hpbuF_kRKV-fBs8gg9hcH-9py1uCN99DvnqvJ80CQ/viewform?usp=pp_url&entry.1449578952=2.Mengenali+Sampah"
+                target="_blank"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1aqt0t6f6B4GJsTIxU3aWFmGdxsF8_ZRWwyb2RCW51tI/edit?resourcekey=&gid=857282865#gid=857282865"
+                target="_blank"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 mb-5">
+            <div class="card-sl">
+              <figure class="sixteen-nine-img rounded">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1677093905912-a653c6301260?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXBsb2FkfGVufDB8fDB8fHww"
+                  alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                />
+              </figure>
+
+              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+              <div class="card-heading">
+                <div class="position-relative">
+                  <p>
+                    Upload Poster
+                    <span class="badge rounded-pill bg-primary">LKPD 3</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSftJqpu8hpbuF_kRKV-fBs8gg9hcH-9py1uCN99DvnqvJ80CQ/viewform?usp=pp_url&entry.1449578952=3.Upload+Poster"
+                target="_blank"
+                class="card-button-1 fw-bold"
+              >
+                Kirim LKPD</a
+              >
+              <a
+                href="https://docs.google.com/spreadsheets/d/1aqt0t6f6B4GJsTIxU3aWFmGdxsF8_ZRWwyb2RCW51tI/edit?resourcekey=&gid=857282865#gid=857282865"
+                target="_blank"
+                class="card-button fw-bold"
+              >
+                Rekap LKPD</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- baris ke-1 akhir -->
+      </div>
+    </div>
+
+    <!-- prakata Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            Assesmen
+          </h5>
+          <h1>Tahapan Kegiatan P5</h1>
+        </div>
+
+        <div class="container my-5">
+          <div
+            class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border"
+          >
+            <div class="col-lg-7 p-3 pt-lg-3">
+              <h1 class="display-5 fw-bold lh-1 text-body-emphasis">
+                Asesmen Gaya Hidup Berkelanjutan 2024
+              </h1>
+              <p class="lead">
+                Pada pelaksanaan P5 dengan tema "Gaya Hidup Berkelanjutan,"
+                kegiatan diawali dengan tahap pengenalan yang bertujuan untuk
+                membangun pemahaman siswa tentang pentingnya Gaya Hidup
+                Berkelanjutan dalam kehidupan sehari-hari.
+              </p>
+              <p class="lead">
+                Siswa diperkenalkan pada berbagai aspek budaya, tradisi, dan
+                nilai-nilai lokal yang menjadi ciri khas daerah mereka, silahkan
+                isi asesmen tombol dibawah
+              </p>
+              <div
+                class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+              >
+                <div class="">
+                  <a
+                    class="m-2 btn btn-primary py-2 px-4 ml-auto"
+                    href="https://docs.google.com/spreadsheets/d/1w4wChkIKCm4qHhDkCH3Y1pkfUepNW4-xVSxoDV1nVYA/edit?usp=sharing"
+                    >Akses Assement</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+              <img
+                class="rounded-lg-3"
+                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXNzZXNzbWVudHxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+                width="720"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Penguji End -->
+
+    <!-- Dokumentasi Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            Dokumentasi
+          </h5>
+          <h1>Kegiatan P5 Gaya Hidup Berkelanjutan</h1>
+        </div>
+        <div class="album pb-5 bg-body-tertiary">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Gaya Hidup Berkelanjutan
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Gaya Hidup Berkelanjutan
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Gaya Hidup Berkelanjutan
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Gaya Hidup Berkelanjutan
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Gaya Hidup Berkelanjutan
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <figure class="sixteen-nine-img rounded">
+                    <img
+                      src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29taW5nJTIwc29vbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt="Video: Lincoln Center Festival 2017: George Balanchine's JEWELS"
+                    />
+                  </figure>
+                  <div class="card-body">
+                    <h5>Dokumentasi Kegiatan</h5>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-body-secondary"
+                        >P5 Gaya Hidup Berkelanjutan
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tim koordinator -->
+
+    <div class="container">
+      <div class="container">
+        <!-- Testimonial Start -->
+        <div class="container mb-5">
+          <div class="container">
+            <div class="text-center mb-4">
+              <h5
+                class="text-primary text-uppercase mb-3"
+                style="letter-spacing: 5px"
+              >
+                TIM
+              </h5>
+              <h1>Koordinator</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="owl-carousel testimonial-carousel">
+                  <div
+                    id="myCarousel"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <!-- Carousel indicators -->
+                    <!-- <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol> -->
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN3N-mO_yxGMw3JWFafdc6eE10KrXLeAau4Mo2LpPv8DU1K2k1rSe6w3tj0nag_ojC06bso4eZrRl3X4AkyXl4kjdVg6vRHsj7XaypbrtiCx2CwEuLRKvK5dISB2KxB7cySVhmAz5_5YmxmXwABlKWnB9WPmTQQ1sBExiSBENbmCgkO5jRcrSkjQ7-Aqc/s320/WhatsApp%20Image%202024-09-02%20at%2008.14.45_013240c9.jpg"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="testimonial">
+                                  <p>"Masa depan bumi ada di tangan kita."</p>
+                                  <p class="overview">
+                                    <b>Diyah Hidayati, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3VSGBFSkClZ13WsLgVfHkbPWpJmqrCrnNaQTNePI4Xb2BxbwuGUDg5k_xRzCUmuZEiJ-Q6vTu8f9FGKWQhRc1JrOCiIl9xwqG9ZZVfROV5yFal66gImWUbDRtRQ63TzBITUL8ELfWS9TCmgWsJuOjLqXXeWEha2beKwoqY8r88gf6RXGs7ISyGKsvZXA/s320/tapik.jpg"
+                                class="object-fit-fill"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="testimonial">
+                                  <p>"Sekolah hijau, masa depan cerah"</p>
+                                  <p class="overview">
+                                    <b>Taufik Hidayat, M.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix31LL1i488gyWkxX8yTjIuJabvou4heDBT6qA8TNwi_BmkP50eIocsgCuuU843lGQHNBR75QQqSO4NRfhu5I3U7XLhoeTxzthmBzK_LbM-gDt1VN7tSrNDm-Sv4wHikFSubbs6S-_vbA01NXjVHUpIknSJAuBWkG0SrEcqzSG_oA14yxVPVFFx2QjY1o/s320/WhatsApp%20Image%202024-09-02%20at%2007.52.53_3c9058e3.jpg"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="testimonial">
+                                  <p>
+                                    "Jangan jadi sampah, jadilah solusi.
+                                    Kurangi, gunakan kembali"
+                                  </p>
+                                  <p class="overview">
+                                    <b>Rini Andriyani, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuPZPp9pvWjQedkLMfm5jzV5zAiUvFptbj3rMUM36yPmEu09IU6S-WUjgG_-j-N9nukHXT4VVTiZP7zf-DZgQZOFPf-5zYdOvhuKVQZOu3oS2mfyxweI5NNu16j4oSMS1vH1b7O5GTAIxZDRMbkM39UhFS16QGWveP1C3JEGHQsrKdrxj3j4UBo3pRN_I/s1600/marsya.jpgg"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="testimonial">
+                                  <p>
+                                    "Mari kurangi penggunaan kendaraan bermotor
+                                    dan jaga udara kita tetap bersih"
+                                  </p>
+                                  <p class="overview">
+                                    <b>Marsya Mahardia Rahman, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmGJmSxygEIZq87W0UH8fj3Z7N2XjuRiKk3HLMhOOAvA9HgAiYD1Ow46l0k9t_b3JS65NjCDOkWpj8rbaWibqb38G4d61gQOGXY0RVwF2bgOGUTDlU4Bj-ESOBiM2WUOjyiYSv7ZWmjv4uqFh8A99Dy3lTyMK12ZIYdW-huumuD0Lammamb5oErzpXbOI/s320/Screenshot%202024-09-02%20075752.png"
+                                class="mr-3"
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="testimonial">
+                                  <p>
+                                    "Mari hemat air dan jaga kelestarian sumber
+                                    daya alam kita."
+                                  </p>
+                                  <p class="overview">
+                                    <b>Zaenal Arifin M. Sn</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="media">
+                              <img
+                                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzTp2sFVSgeIxkIWlrgZM4jJgNgIvyTyB1vrMnAdQEaK1nGgsQqS1y4msLIcMkVGDb_v9RPTmhjCqraHyK9BUBI0cLRIA76TJap0SM9iOF2ZBQazCgveG5yVu9hIxXBJchdRzYkEqyja6lENl8kQUY1BHSt8eqaFQl72wC_cqFRbdSuy4bk6BqI_v-hR4/s320/WhatsApp%20Image%202024-09-02%20at%2007.14.28_be2a0ff7.jpg"
+                                class=""
+                                alt=""
+                              />
+                              <div class="media-body">
+                                <div class="testimonial">
+                                  <p>
+                                    "Lingkungan sekolah yang bersih dan asri,
+                                    membuat kita lebih nyaman belajar dan
+                                    bermain."
+                                  </p>
+                                  <p class="overview">
+                                    <b>Mimbar Rustamin, S.Pd</b>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-5">
+          <div class="container py-5">
+            <div class="text-center mb-5">
+              <h5
+                class="text-primary text-uppercase mb-3"
+                style="letter-spacing: 5px"
+              >
+                Dokumentasi
+              </h5>
+              <h1>Vidio Kegiatan P5</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="owl-carousel testimonial-carousel">
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/vv-BQR9pUOM?si=Id23wtF470bCsevL"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Pembukaan Kegiatan P5</h3>
+                    <p>
+                      Azzahra Putri Aprilia <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/D669TDa4mQ0?si=PgDWNVOY-0eWgwsj"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Duta Budaya</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/aRQCbbVo4DI?si=Jm_F2fIFCtIHd7JU"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Seminar P5</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/FW5Fb8gTemU?si=LM0lsKYMJRGh-suG"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Bermain Gaya Hidup Berkelanjutan</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/wk0-aj618mw?si=ttuG6ELXbfa0du5E"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Olah Raga Dan Gaya Hidup Berkelanjutan</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/yH8KhrmAXDQ?si=EF5lLYEovW3i5W06"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Duta Budaya</h3>
+                    <p>
+                      Rizky Janwart <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Duta Budaya SMK Singaparna
+                      </span>
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <iframe
+                      width="280"
+                      height="515"
+                      src="https://www.youtube.com/embed/JWh8Lukngn4?si=jNc7yEctGAtQP2xT"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <h3>Membuat Infografis</h3>
+                    <p>
+                      Maisya Yaummi Isnada <br />
+                      <span class="badge rounded-pill bg-primary"
+                        >Desain Komunikasi Visual</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial End -->
+      </div>
+    </div>
+    <!-- Dokumentasi End -->
+
+    <!-- prakata Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h5
+            class="text-primary text-uppercase mb-3"
+            style="letter-spacing: 5px"
+          >
+            Prakata
+          </h5>
+          <h1>Kepala SMK Singaparna</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <p class="mb-4 lead">
+                  Mari kita bersama-sama wujudkan lingkungan sekolah yang asri
+                  dan lestari. Gaya hidup berkelanjutan bukan hanya sekadar
+                  slogan, melainkan tindakan nyata yang harus kita lakukan
+                  sehari-hari.
+                </p>
+                <img
+                  class="img-fluid mx-auto mb-3"
+                  style="
+                    object-fit: cover;
+                    object-position: left top;
+                    scale: 120%;
+                  "
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH7Qa2jF2vqEZ4DeZkhdN6ybFw3Kjqt6k9ofnkEuq2YvHmyYJtvq8OUh_yIKbZNN9UEjZEiOHFSsLLNAUR5-CjErmf2K5Efzeg7lxjEvFuOgKo10OGozwcJrhr4kawYq76FOY1A8I2AiP9kIj1uWDq9JMD_UnMHImLt1xZlniDjlal8zWe7rgLgKPmY2w/s1098/Kepala%20Sekolah%20SMK%20Singaparna.png"
+                  alt=""
+                />
+                <h5 class="m-0 lead">Sri Mulyani, S.Pd</h5>
+                <span class="badge rounded-pill bg-primary"
+                  >Kepala SMK Singaparna</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- prakata End -->
+
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+
+    <div
+      class="container-fluid bg-primary text-white border-top py-4 px-sm-3 px-md-5"
+      style="border-color: rgba(256, 256, 256, 0.1) !important"
+    >
+      <footer class="py-3 my-4 text-light">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="px-2 text-light">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ayo_mulai" class="px-2 text-light">Kegiatan</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tentang" class="px-2 text-light">Tentang</a>
+          </li>
+        </ul>
+        <p class="text-center">
+          DKV SMK Singaparna @ <span class="text-light fw-bold">2024</span>
+        </p>
+      </footer>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
